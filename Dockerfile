@@ -58,7 +58,7 @@ RUN dotnet_sdk_version=6.0.300 \
 COPY ./notebooks/ ${HOME}/Notebooks/
 
 # Copy package sources
-COPY ./NuGet.config ${HOME}/nuget.config
+COPY ./Nuget.config ${HOME}/nuget.config
 
 RUN chown -R ${NB_UID} ${HOME}
 USER ${USER}
