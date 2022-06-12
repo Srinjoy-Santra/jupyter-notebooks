@@ -55,7 +55,7 @@ RUN dotnet_sdk_version=6.0.300 \
     && dotnet help
 
 # Copy notebooks
-COPY ./samples/notebooks/ ${HOME}/Notebooks/
+COPY ./notebooks/ ${HOME}/Notebooks/
 
 # Copy package sources
 COPY ./NuGet.config ${HOME}/nuget.config
